@@ -1,0 +1,119 @@
+.header-container{
+    
+    background-color: #3d405b;
+    color: white;
+    height: 80px;
+    /* padding: 0; */
+    display: flex;
+    /* grid-template-areas: "logo search nav"; */
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+  }
+  .logo{
+    font-weight: 700;
+    font-size: x-large;
+  }
+  /* .search{
+    display:grid;
+    grid-area:search;
+  } */
+  .nav{
+    display: flex;
+  }
+  .nav a:first-child{
+    padding-right: 30px;
+    /* grid-area: nav; */
+    /* display:grid;
+    grid-template-columns: repeat(2,auto); */
+    
+  }
+  .nav svg{
+    height: 20px;
+    width: auto;
+    color: white;
+    /* padding-right: 30px; */
+  }
+  /* .header-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header-container .header-content a{
+    color:white;
+    text-decoration: none; */
+    /* padding-right: 20px; */
+  /* }
+
+  
+ /* .header-content label{
+    font-size: 30px;
+    font-weight: bold;
+  } */
+  
+  .search-input{
+    background-color: #f5f4f4;
+    height:40px;
+    width:400px;
+    border: none;
+    border-radius: 10px;
+    font-family: futura-pt,Tahoma,Geneva,Verdana,Arial,sans-serif;
+    font-style: normal;
+    /* font-weight: 700; */
+    /* text-transform: uppercase; */
+    font-size: 12px;
+    line-height: 1.7;
+    color: #767676;
+    letter-spacing: 2px;
+    text-indent: 10px;
+  }
+
+  .burger{
+    cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+    display: none;
+  }
+
+  /* .active{
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+  } */
+  @media(max-width:700px) {
+    .header-container{
+      padding-top: 20px;
+      /* flex-direction: column; */
+      /* grid-template-areas: "logo burger" "nav nav"; */
+    }
+    .search{
+      display:none;
+    }
+    .active-category{
+      
+        flex-direction: column;
+        visibility: visible!important;
+        row-gap: 2rem;
+    }
+    .category-container{
+      visibility: hidden;
+
+    }
+    .nav{
+      /* display:grid;
+      grid-template-rows: repeat(2,auto);
+      grid-template-columns: none;
+      grid-row-gap: 20px; */
+      /* flex-direction: column; */
+      align-items: center;
+    justify-items: center;
+    }
+    .burger{
+      display:block;
+      height:20px;
+    }
+    .burger svg{
+      height: 100%;
+      width: auto;
+    
+    }
+  }
