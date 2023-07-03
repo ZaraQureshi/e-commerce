@@ -8,6 +8,7 @@ import Register from './Components/AuthPage/Register';
 import Profile from './Components/Profile';
 import Authentication from './Components/AuthPage/Authentication';
 
+// test1
 function App() {
   return (
     <div className="App">
